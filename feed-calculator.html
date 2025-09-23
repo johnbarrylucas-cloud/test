@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Feed Calculator</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Balut Business</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="manage-ducks.html">Manage Ducks</a></li>
+          <li class="nav-item"><a class="nav-link active" href="feed-calculator.html">Feed Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="record-sales.html">Record Sales</a></li>
+          <li class="nav-item"><a class="nav-link" href="incubator.html">Incubator</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light p-4 text-center">
+    <h2>🥬 Feed & Vitamin Calculator</h2>
+    <p class="lead">Estimate daily feed requirements based on duck count</p>
+  </header>
+
+  <main class="container my-5">
+    <div class="card">
+      <div class="card-header bg-success text-white">Calculator</div>
+      <div class="card-body">
+        <form>
+          <div class="row g-3">
+            <div class="col-md-6">
+              <label for="duckCount" class="form-label">Number of Ducks</label>
+              <input type="number" class="form-control" id="duckCount" placeholder="Enter count">
+            </div>
+            <div class="col-md-6">
+              <label for="feedType" class="form-label">Feed Type</label>
+              <select class="form-select" id="feedType">
+                <option value="starter">Starter</option>
+                <option value="layer">Layer</option>
+                <option value="booster">Booster</option>
+              </select>
+            </div>
+            <div class="col-md-12 d-flex justify-content-end">
+              <button type="submit" class="btn btn-outline-success">Calculate</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

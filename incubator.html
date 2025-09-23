@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Incubator Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Balut Business</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="manage-ducks.html">Manage Ducks</a></li>
+          <li class="nav-item"><a class="nav-link" href="feed-calculator.html">Feed Calculator</a></li>
+          <li class="nav-item"><a class="nav-link" href="record-sales.html">Record Sales</a></li>
+          <li class="nav-item"><a class="nav-link active" href="incubator.html">Incubator</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header class="bg-light p-4 text-center">
+    <h2>🧪 Incubator Dashboard</h2>
+    <p class="lead">Track egg batches and incubation progress</p>
+  </header>
+
+  <main class="container my-5">
+    <div class="card">
+      <div class="card-header bg-success text-white">Egg Batch Overview</div>
+      <div class="card-body">
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Batch Name</th>
+              <th>Egg Count</th>
+              <th>Incubation Start</th>
+              <th>Days Incubated</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Egg Batch A</td>
+              <td>200</td>
+              <td>2025-09-20</td>
+              <td>3</td>
+              <td>In Progress</td>
+              <td><button class="btn btn-sm btn-outline-success">Update</button></td>
+            </tr>
+            <!-- More rows later -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
