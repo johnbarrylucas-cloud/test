@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio – Projects</title>
+<title>Portfolio – Blog</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>* { font-family: 'DM Sans', sans-serif; } .font-display { font-family: 'Syne', sans-serif; }</style>
@@ -16,134 +16,148 @@
   <div class="flex items-center gap-8">
     <a href="index.html" class="text-sm text-slate-500 hover:text-slate-800 transition-colors">Home</a>
     <a href="about.html" class="text-sm text-slate-500 hover:text-slate-800 transition-colors">About</a>
-    <a href="projects.html" class="text-sm text-indigo-600 font-500 border-b-2 border-indigo-500 pb-0.5">Projects</a>
-    <a href="blog.html" class="text-sm text-slate-500 hover:text-slate-800 transition-colors">Blog</a>
+    <a href="projects.html" class="text-sm text-slate-500 hover:text-slate-800 transition-colors">Projects</a>
+    <a href="blog.html" class="text-sm text-indigo-600 font-500 border-b-2 border-indigo-500 pb-0.5">Blog</a>
     <a href="contact.html" class="text-sm bg-indigo-600 text-white px-5 py-2 rounded-full hover:bg-indigo-700 transition-colors">Contact</a>
   </div>
 </nav>
 
 <!-- PAGE HEADER -->
 <section class="pt-32 pb-16 px-16 bg-slate-800">
-  <p class="text-xs tracking-[4px] uppercase text-indigo-400 mb-3">My Work</p>
-  <h1 class="font-display text-5xl font-800 text-white">Projects</h1>
+  <p class="text-xs tracking-[4px] uppercase text-indigo-400 mb-3">My Thoughts</p>
+  <h1 class="font-display text-5xl font-800 text-white">Blog</h1>
 </section>
 
-<!-- FILTER TABS -->
-<section class="bg-white px-16 py-5 border-b border-slate-100 flex gap-3 sticky top-16 z-40">
-  <button class="bg-indigo-600 text-white px-5 py-2 rounded-full text-sm font-500">All</button>
-  <button class="border border-slate-200 text-slate-500 px-5 py-2 rounded-full text-sm hover:border-indigo-300 hover:text-indigo-600 transition-colors">Web Dev</button>
-  <button class="border border-slate-200 text-slate-500 px-5 py-2 rounded-full text-sm hover:border-indigo-300 hover:text-indigo-600 transition-colors">Mobile</button>
-  <button class="border border-slate-200 text-slate-500 px-5 py-2 rounded-full text-sm hover:border-indigo-300 hover:text-indigo-600 transition-colors">UI/UX</button>
-  <button class="border border-slate-200 text-slate-500 px-5 py-2 rounded-full text-sm hover:border-indigo-300 hover:text-indigo-600 transition-colors">Others</button>
+<!-- FEATURED POST -->
+<section class="py-20 px-16 bg-white">
+  <p class="text-xs tracking-[4px] uppercase text-indigo-400 mb-6">Featured Article</p>
+  <div class="flex gap-12 items-center bg-slate-50 rounded-3xl overflow-hidden border border-slate-100">
+    <div class="w-80 h-56 bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center flex-shrink-0">
+      <span class="text-indigo-300 text-xs tracking-widest uppercase">Featured Image</span>
+    </div>
+    <div class="flex-1 pr-10 py-6">
+      <div class="flex items-center gap-3 mb-3">
+        <span class="text-xs bg-indigo-600 text-white px-3 py-1 rounded-full font-500">Featured</span>
+        <span class="text-xs bg-slate-200 text-slate-500 px-3 py-1 rounded-full">Web Dev</span>
+      </div>
+      <h2 class="font-display text-2xl font-700 text-slate-800 mb-3">Introduction to PHP</h2>
+      <p class="text-slate-500 text-sm leading-relaxed mb-4">Lorem ipsum dolor</p>
+      <div class="flex items-center gap-4 text-xs text-slate-400 mb-5">
+        <span>March 10, 2025</span>
+        <span>·</span>
+        <span>5 min read</span>
+        <span>·</span>
+        <span>128 views</span>
+      </div>
+      <a href="#" class="bg-indigo-600 text-white px-6 py-2.5 rounded-full text-sm font-500 hover:bg-indigo-700 transition-colors">Read More →</a>
+    </div>
+  </div>
 </section>
 
-<!-- PROJECT GRID -->
-<section class="py-16 px-16 bg-slate-50">
+<!-- RECENT POSTS -->
+<section class="py-20 px-16 bg-slate-50">
+  <p class="text-xs tracking-[4px] uppercase text-indigo-400 mb-2">Latest Writing</p>
+  <h2 class="font-display text-3xl font-700 text-slate-800 mb-10">Recent Articles</h2>
   <div class="grid grid-cols-3 gap-7">
 
     <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
-      <div class="h-44 bg-gradient-to-br from-indigo-100 to-purple-100 flex items-center justify-center">
-        <span class="text-indigo-300 text-xs tracking-widest uppercase">XXX</span>
+      <div class="h-40 bg-gradient-to-br from-indigo-100 to-blue-100 flex items-center justify-center">
+        <span class="text-indigo-300 text-xs tracking-widest uppercase">Post Image</span>
       </div>
       <div class="p-5">
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">React</span>
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">CSS</span>
+        <div class="flex gap-2 mb-3">
+          <span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-1 rounded-full">Web Dev</span>
         </div>
-        <h3 class="font-display font-700 text-slate-800 mb-2">Project A</h3>
-        <p class="text-xs text-slate-400 leading-relaxed mb-4">lorem ipsum dolor</p>
-        <div class="flex gap-2">
-          <a href="#" class="text-xs bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors">Live Demo</a>
-          <a href="#" class="text-xs border border-slate-200 text-slate-600 px-4 py-2 rounded-full hover:border-indigo-300 transition-colors">GitHub</a>
+        <h3 class="font-display font-700 text-slate-800 mb-2 leading-snug">Laravel Guide</h3>
+        <p class="text-xs text-slate-400 leading-relaxed mb-4">Lorem ipsum dolor</p>
+        <div class="flex justify-between items-center pt-3 border-t border-slate-100">
+          <span class="text-xs text-slate-300">Mar 5, 2025 · 4 min</span>
+          <a href="#" class="text-xs text-indigo-500 font-500 hover:text-indigo-700">Read →</a>
         </div>
       </div>
     </div>
 
     <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
-      <div class="h-44 bg-gradient-to-br from-slate-100 to-blue-100 flex items-center justify-center">
-        <span class="text-indigo-300 text-xs tracking-widest uppercase">XXX</span>
+      <div class="h-40 bg-gradient-to-br from-rose-50 to-pink-100 flex items-center justify-center">
+        <span class="text-pink-300 text-xs tracking-widest uppercase">Post Image</span>
       </div>
       <div class="p-5">
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">PHP</span>
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">MySQL</span>
+        <div class="flex gap-2 mb-3">
+          <span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-1 rounded-full">Design</span>
         </div>
-        <h3 class="font-display font-700 text-slate-800 mb-2">Project B</h3>
+        <h3 class="font-display font-700 text-slate-800 mb-2 leading-snug">Why you should use Figma</h3>
         <p class="text-xs text-slate-400 leading-relaxed mb-4">Lorem ipsum dolor</p>
-        <div class="flex gap-2">
-          <a href="#" class="text-xs bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors">Live Demo</a>
-          <a href="#" class="text-xs border border-slate-200 text-slate-600 px-4 py-2 rounded-full hover:border-indigo-300 transition-colors">GitHub</a>
+        <div class="flex justify-between items-center pt-3 border-t border-slate-100">
+          <span class="text-xs text-slate-300">Feb 20, 2025 · 6 min</span>
+          <a href="#" class="text-xs text-indigo-500 font-500 hover:text-indigo-700">Read →</a>
         </div>
       </div>
     </div>
 
     <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
-      <div class="h-44 bg-gradient-to-br from-emerald-50 to-teal-100 flex items-center justify-center">
-        <span class="text-teal-300 text-xs tracking-widest uppercase">XXX</span>
+      <div class="h-40 bg-gradient-to-br from-amber-50 to-yellow-100 flex items-center justify-center">
+        <span class="text-amber-300 text-xs tracking-widest uppercase">Post Image</span>
       </div>
       <div class="p-5">
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">Vue</span>
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">Node.js</span>
+        <div class="flex gap-2 mb-3">
+          <span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-1 rounded-full">Tips</span>
         </div>
-        <h3 class="font-display font-700 text-slate-800 mb-2">Project C</h3>
+        <h3 class="font-display font-700 text-slate-800 mb-2 leading-snug">Why focusing on one language matters</h3>
         <p class="text-xs text-slate-400 leading-relaxed mb-4">Lorem ipsum dolor</p>
-        <div class="flex gap-2">
-          <a href="#" class="text-xs bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors">Live Demo</a>
-          <a href="#" class="text-xs border border-slate-200 text-slate-600 px-4 py-2 rounded-full hover:border-indigo-300 transition-colors">GitHub</a>
+        <div class="flex justify-between items-center pt-3 border-t border-slate-100">
+          <span class="text-xs text-slate-300">Feb 10, 2025 · 3 min</span>
+          <a href="#" class="text-xs text-indigo-500 font-500 hover:text-indigo-700">Read →</a>
         </div>
       </div>
     </div>
 
     <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
-      <div class="h-44 bg-gradient-to-br from-amber-50 to-orange-100 flex items-center justify-center">
-        <span class="text-orange-300 text-xs tracking-widest uppercase">Screenshot</span>
+      <div class="h-40 bg-gradient-to-br from-emerald-50 to-teal-100 flex items-center justify-center">
+        <span class="text-teal-300 text-xs tracking-widest uppercase">Post Image</span>
       </div>
       <div class="p-5">
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">HTML</span>
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">JS</span>
+        <div class="flex gap-2 mb-3">
+          <span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-1 rounded-full">Career</span>
         </div>
-        <h3 class="font-display font-700 text-slate-800 mb-2">Project D</h3>
+        <h3 class="font-display font-700 text-slate-800 mb-2 leading-snug">Why you should become a developer</h3>
         <p class="text-xs text-slate-400 leading-relaxed mb-4">Lorem ipsum dolor</p>
-        <div class="flex gap-2">
-          <a href="#" class="text-xs bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors">Live Demo</a>
-          <a href="#" class="text-xs border border-slate-200 text-slate-600 px-4 py-2 rounded-full hover:border-indigo-300 transition-colors">GitHub</a>
+        <div class="flex justify-between items-center pt-3 border-t border-slate-100">
+          <span class="text-xs text-slate-300">Jan 28, 2025 · 5 min</span>
+          <a href="#" class="text-xs text-indigo-500 font-500 hover:text-indigo-700">Read →</a>
         </div>
       </div>
     </div>
 
     <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
-      <div class="h-44 bg-gradient-to-br from-rose-50 to-pink-100 flex items-center justify-center">
-        <span class="text-pink-300 text-xs tracking-widest uppercase">XXX</span>
+      <div class="h-40 bg-gradient-to-br from-violet-50 to-purple-100 flex items-center justify-center">
+        <span class="text-purple-300 text-xs tracking-widest uppercase">Post Image</span>
       </div>
       <div class="p-5">
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">Laravel</span>
+        <div class="flex gap-2 mb-3">
+          <span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-1 rounded-full">Tutorial</span>
         </div>
-        <h3 class="font-display font-700 text-slate-800 mb-2">Project E</h3>
+        <h3 class="font-display font-700 text-slate-800 mb-2 leading-snug">How to setup XAMPP</h3>
         <p class="text-xs text-slate-400 leading-relaxed mb-4">Lorem ipsum dolor</p>
-        <div class="flex gap-2">
-          <a href="#" class="text-xs bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors">Live Demo</a>
-          <a href="#" class="text-xs border border-slate-200 text-slate-600 px-4 py-2 rounded-full hover:border-indigo-300 transition-colors">GitHub</a>
+        <div class="flex justify-between items-center pt-3 border-t border-slate-100">
+          <span class="text-xs text-slate-300">Jan 15, 2025 · 8 min</span>
+          <a href="#" class="text-xs text-indigo-500 font-500 hover:text-indigo-700">Read →</a>
         </div>
       </div>
     </div>
 
     <div class="bg-white rounded-3xl overflow-hidden border border-slate-100 shadow-sm hover:shadow-lg transition-all hover:-translate-y-1">
-      <div class="h-44 bg-gradient-to-br from-violet-50 to-purple-100 flex items-center justify-center">
-        <span class="text-purple-300 text-xs tracking-widest uppercase">XXX</span>
+      <div class="h-40 bg-gradient-to-br from-slate-100 to-gray-100 flex items-center justify-center">
+        <span class="text-slate-300 text-xs tracking-widest uppercase">Post Image</span>
       </div>
       <div class="p-5">
-        <div class="flex flex-wrap gap-2 mb-3">
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">Figma</span>
-          <span class="text-xs bg-indigo-50 text-indigo-600 px-2.5 py-1 rounded-full font-500">UI/UX</span>
+        <div class="flex gap-2 mb-3">
+          <span class="text-xs bg-slate-100 text-slate-500 px-2.5 py-1 rounded-full">Opinion</span>
         </div>
-        <h3 class="font-display font-700 text-slate-800 mb-2">Project F</h3>
+        <h3 class="font-display font-700 text-slate-800 mb-2 leading-snug">My thoughts about PHP</h3>
         <p class="text-xs text-slate-400 leading-relaxed mb-4">Lorem ipsum dolor</p>
-        <div class="flex gap-2">
-          <a href="#" class="text-xs bg-indigo-600 text-white px-4 py-2 rounded-full hover:bg-indigo-700 transition-colors">Preview</a>
-          <a href="#" class="text-xs border border-slate-200 text-slate-600 px-4 py-2 rounded-full hover:border-indigo-300 transition-colors">Figma</a>
+        <div class="flex justify-between items-center pt-3 border-t border-slate-100">
+          <span class="text-xs text-slate-300">Jan 2, 2025 · 4 min</span>
+          <a href="#" class="text-xs text-indigo-500 font-500 hover:text-indigo-700">Read →</a>
         </div>
       </div>
     </div>
@@ -153,8 +167,8 @@
 
 <!-- FOOTER -->
 <footer class="bg-slate-800 px-16 py-8 flex items-center justify-between">
-  <span class="font-display text-white font-700 text-lg">Lloyd Hhannes Sanchez<span class="text-indigo-400">.</span></span>
-  <p class="text-slate-400 text-sm">© 2025 Your Name. All rights reserved.</p>
+  <span class="font-display text-white font-700 text-lg">YourName<span class="text-indigo-400">.</span></span>
+  <p class="text-slate-400 text-sm">© 2026 Lloyd Hhannes Sanchez. All rights reserved.</p>
   <div class="flex gap-3">
   </div>
 </footer>
